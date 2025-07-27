@@ -1,0 +1,189 @@
+{% load static %}  <!-- Load Django static template tag -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    <title>Urban Pantry</title>
+</head>
+<body>
+  <div class="hero-container">
+     <nav class="navbar">
+    <h1 class="logo"><a href="/">Urban Pantry</a></h1>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navLinks">
+  <li><a href="{%url 'about'%}">About Us</a></li>
+  <li class="dropdown" onclick="toggleDropdown(event)">
+  <a href="#">Products</a>
+  <div class="nav-slideout" id="navSlideout">
+  <ul class="dropdown-menu" id="productDropdown">
+  <li><a href="{% url 'electronic'  %}">Electronic Appliances</a></li>
+  <li><a href="{% url 'decorative'  %}">Decorative Items</a></li>
+  <li><a href="{% url 'fruits'       %}">Fruits And Vegetables</a></li>
+  <li><a href="{% url 'pet'         %}">Pet Store</a></li>
+</ul>
+</li>
+<li><a href="{%url 'contact'%}">Contact</a></li>
+<li><a href="{%url 'services'%}">Services</a></li>
+    </ul>
+  </nav>
+<!-- 🔁 Single Advertisement Slider -->
+<!-- 🔁 Single Advertisement Slider -->
+<div class="ad-slider">
+  <button class="prev" onclick="changeAd(-1)">&#10094;</button>
+
+  <div class="ad-slide active">
+    <img src="{% static 'css/img/sale.jpg' %}" alt="Ad 1">
+  </div>
+
+  <div class="ad-slide">
+    <img src="{% static 'css/img/lap.jpg' %}" alt="Ad 2">
+  </div>
+
+  <div class="ad-slide">
+    <img src="{% static 'css/img/fsa.jpg' %}" alt="Ad 3">
+  </div>
+
+   <div class="ad-slide">
+    <img src="{% static 'css/img/ssale.png' %}" alt="Ad 4">
+  </div>
+
+  <button class="next" onclick="changeAd(1)">&#10095;</button>
+</div>
+
+
+  <section class="brand-partners">
+  <h2>Our Brand Partners</h2>
+  <div class="partner-logos">
+    <img src="{% static 'css/img/adidas.png' %}" alt="Brand 1">
+    <img src="{% static 'css/img/armani.png' %}" alt="Brand 2">
+    <img src="{% static 'css/img/coco.png' %}" alt="Brand 3">
+    <img src="{% static 'css/img/dg.png' %}" alt="Brand 4">
+    <img src="{% static 'css/img/diesel.png' %}" alt="Brand 5">
+    <img src="{% static 'css/img/fast.webp' %}" alt="Brand 6">
+    <img src="{% static 'css/img/fila.webp' %}" alt="Brand 7">
+    <img src="{% static 'css/img/fossilogo.jpg' %}" alt="Brand 8">
+    <img src="{% static 'css/img/gshocklogo.jpg' %}" alt="Brand 9">
+    <img src="{% static 'css/img/gucci.png' %}" alt="Brand 10">
+    <img src="{% static 'css/img/hitachilogo.png' %}" alt="Brand 11">
+    <img src="{% static 'css/img/hm.png' %}" alt="Brand 12">
+    <img src="{% static 'css/img/iphonelogo.png' %}" alt="Brand 13">
+    <img src="{% static 'css/img/levi.png' %}" alt="Brand 14">
+    <img src="{% static 'css/img/lglogo.webp' %}" alt="Brand 15">
+    <img src="{% static 'css/img/nike.png' %}" alt="Brand 16">
+    <img src="{% static 'css/img/new.webp' %}" alt="Brand 17">
+    <img src="{% static 'css/img/noiselogo.webp' %}" alt="Brand 18">
+    <img src="{% static 'css/img/okaley.webp' %}" alt="Brand 19">
+    <img src="{% static 'css/img/oppologo.jpg' %}" alt="Brand 20">
+    <img src="{% static 'css/img/panasoniclogo.jpg' %}" alt="Brand 21">    
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="footersec">
+    <div class="ftr1">
+      <div>
+        <h2>Urban pantry</h2>
+      </div>
+    <div class="sec11">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+    </div>
+    <div class="ftr2">
+      <h4>Quick Links</h4>
+      <a href="#">Twiter</a><a href="">Facebook</a>
+      <a href="">Instagram</a><a href="">Youtube</a>
+    </div>
+    <div class="ftr3">
+      <h1>Contact</h1>
+      <p>+91 9373627789</p>
+      <p>+91 9228373721</p>
+      <p>+91 8737382632</p>
+      <p>+91 7801827772</p>
+    </div>
+
+    <div class="ftr-buttons">
+  <!-- Login column -->
+  <div class="login-section">
+    <button class="footer-btn" onclick="toggleLoginForm()">Login</button>
+
+    <!-- Form under Login button -->
+    <form id="loginForm" class="login-form">
+      <input type="email" placeholder="Email ID" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="footer-btn">Submit</button>
+    </form>
+  </div>
+
+  <!-- Sign Up column -->
+  <div class="signup-section">
+    <button class="footer-btn" onclick="toggleSignupForm()">Sign Up</button>
+     <form id="signupForm" class="signup-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email ID" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="footer-btn">Register</button>
+    </form>
+  </div>
+</div>
+  </div>
+  <div class="footersec2">&copy; All Rights Reserved By Developer
+  </div>
+</footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('show');
+    }
+     function toggleDropdown(event) {
+    event.stopPropagation();  // Prevent bubbling to document
+    const dropdown = event.currentTarget.querySelector('.dropdown-menu');
+    dropdown.classList.toggle('show-dropdown');
+  }
+  function toggleLoginForm() {
+    const form = document.getElementById('loginForm');
+    form.style.display = form.style.display === 'flex' ? 'none' : 'flex';
+  }
+  
+  function toggleSignupForm() {
+    const form = document.getElementById('signupForm');
+    form.style.display = form.style.display === 'flex' ? 'none' : 'flex';
+  }
+  let currentAd = 0;
+  const slides = document.querySelectorAll('.ad-slide');
+
+  function showAd(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) slide.classList.add('active');
+    });
+  }
+
+  function changeAd(direction) {
+    currentAd += direction;
+    if (currentAd >= slides.length) currentAd = 0;
+    if (currentAd < 0) currentAd = slides.length - 1;
+    showAd(currentAd);
+  }
+
+  setInterval(() => changeAd(1), 5000); // Auto slide every 5 sec
+
+
+  // Hide dropdown if clicked outside
+  document.addEventListener('click', function () {
+    const dropdowns = document.querySelectorAll('.dropdown-menu');
+    dropdowns.forEach(menu => menu.classList.remove('show-dropdown'));
+  });
+  </script>
+</body>
+</html>

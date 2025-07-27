@@ -1,0 +1,193 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/television.css' %}">
+  <title>Our Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="hero-container2">
+    <section class="sec3">
+      <h1>Our Television Products</h1>
+      <div class="product-grid">
+{% comment "Product Card Template" %}
+<div class="product-card">
+  <img src="{% static 'css/img/sam.webp' %}" alt="Samsung">
+  <h4>Samsung Television</h4>
+  <p class="price">₹22,999 - ₹1,78,999</p>
+  <div class="btn-group">
+    <a href="{% url 'cart' %}" class="cart-btn">
+      <i class="fa-solid fa-cart-plus"></i> Add to Cart
+      <span class="btn-loader"></span>
+    </a>
+    <a href="{% url 'buy' %}" class="buy-btn">
+      <i class="fa-solid fa-bolt"></i> Buy Now
+      <span class="btn-loader"></span>
+    </a>
+  </div>
+</div>
+{% endcomment %}
+
+<!-- Repeat for each product -->
+<div class="product-card">
+  <img src="{% static 'css/img/sam.webp' %}" alt="Samsung">
+  <h4>Samsung Television</h4>
+  <p class="price">₹22,999 - ₹1,78,999</p>
+  <div class="btn-group">
+    <a href="{% url 'cart' %}" class="cart-btn">
+      <i class="fa-solid fa-cart-plus"></i> Add to Cart
+      <span class="btn-loader"></span>
+    </a>
+    <a href="{% url 'buy' %}" class="buy-btn">
+      <i class="fa-solid fa-bolt"></i> Buy Now
+      <span class="btn-loader"></span>
+    </a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="{% static 'css/img/hitachi.jpg' %}" alt="Hitachi">
+  <h4>Hitachi Television</h4>
+  <p class="price">₹12,999 - ₹87,999</p>
+  <div class="btn-group">
+    <a href="{% url 'cart' %}" class="cart-btn">
+      <i class="fa-solid fa-cart-plus"></i> Add to Cart
+      <span class="btn-loader"></span>
+    </a>
+    <a href="{% url 'buy' %}" class="buy-btn">
+      <i class="fa-solid fa-bolt"></i> Buy Now
+      <span class="btn-loader"></span>
+    </a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="{% static 'css/img/lg.webp' %}" alt="LG">
+  <h4>Life's Good Television</h4>
+  <p class="price">₹21,999 - ₹1,57,999</p>
+  <div class="btn-group">
+    <a href="{% url 'cart' %}" class="cart-btn">
+      <i class="fa-solid fa-cart-plus"></i> Add to Cart
+      <span class="btn-loader"></span>
+    </a>
+    <a href="{% url 'buy' %}" class="buy-btn">
+      <i class="fa-solid fa-bolt"></i> Buy Now
+      <span class="btn-loader"></span>
+    </a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="{% static 'css/img/sony.webp' %}" alt="Sony">
+  <h4>Sony Television</h4>
+  <p class="price">₹18,999 - ₹97,899</p>
+  <div class="btn-group">
+    <a href="{% url 'cart' %}" class="cart-btn">
+      <i class="fa-solid fa-cart-plus"></i> Add to Cart
+      <span class="btn-loader"></span>
+    </a>
+    <a href="{% url 'buy' %}" class="buy-btn">
+      <i class="fa-solid fa-bolt"></i> Buy Now
+      <span class="btn-loader"></span>
+    </a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="{% static 'css/img/toshiba.webp' %}" alt="Toshiba">
+  <h4>Toshiba Television</h4>
+  <p class="price">₹11,999 - ₹47,999</p>
+  <div class="btn-group">
+    <a href="{% url 'cart' %}" class="cart-btn">
+      <i class="fa-solid fa-cart-plus"></i> Add to Cart
+      <span class="btn-loader"></span>
+    </a>
+    <a href="{% url 'buy' %}" class="buy-btn">
+      <i class="fa-solid fa-bolt"></i> Buy Now
+      <span class="btn-loader"></span>
+    </a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="{% static 'css/img/neo.webp' %}" alt="Neo">
+  <h4>Neo Television</h4>
+  <p class="price">₹17,000 - ₹76,999</p>
+  <div class="btn-group">
+    <a href="{% url 'cart' %}" class="cart-btn">
+      <i class="fa-solid fa-cart-plus"></i> Add to Cart
+      <span class="btn-loader"></span>
+    </a>
+    <a href="{% url 'buy' %}" class="buy-btn">
+      <i class="fa-solid fa-bolt"></i> Buy Now
+      <span class="btn-loader"></span>
+    </a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="{% static 'css/img/philips.jpg' %}" alt="Philips">
+  <h4>Philips Television</h4>
+  <p class="price">₹17,999 - ₹78,899</p>
+  <div class="btn-group">
+    <a href="{% url 'cart' %}" class="cart-btn">
+      <i class="fa-solid fa-cart-plus"></i> Add to Cart
+      <span class="btn-loader"></span>
+    </a>
+    <a href="{% url 'buy' %}" class="buy-btn">
+      <i class="fa-solid fa-bolt"></i> Buy Now
+      <span class="btn-loader"></span>
+    </a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="{% static 'css/img/panasonic.jpg' %}" alt="Panasonic">
+  <h4>Panasonic Television</h4>
+  <p class="price">₹8,999 - ₹74,000</p>
+  <div class="btn-group">
+    <a href="{% url 'cart' %}" class="cart-btn">
+      <i class="fa-solid fa-cart-plus"></i> Add to Cart
+      <span class="btn-loader"></span>
+    </a>
+    <a href="{% url 'buy' %}" class="buy-btn">
+      <i class="fa-solid fa-bolt"></i> Buy Now
+      <span class="btn-loader"></span>
+    </a>
+  </div>
+</div>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <!-- JS for button loading animation -->
+  <script>
+    const cartButtons = document.querySelectorAll('.cart-btn');
+    const buyButtons = document.querySelectorAll('.buy-btn');
+
+    function addLoading(button) {
+      button.classList.add('loading');
+      button.disabled = true;
+      setTimeout(() => {
+        button.classList.remove('loading');
+        button.disabled = false;
+      }, 1500);
+    }
+
+    cartButtons.forEach(btn => {
+      btn.addEventListener('click', () => addLoading(btn));
+    });
+
+    buyButtons.forEach(btn => {
+      btn.addEventListener('click', () => addLoading(btn));
+    });
+  </script>
+</body>
+</html>

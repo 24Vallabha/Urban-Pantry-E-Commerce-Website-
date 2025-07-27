@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Electronic Products</title>
+  <link rel="stylesheet" href="{% static 'css/electronic.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="hero-container1">
+    <section class="sec2">
+      <h1>Our Electronic Products</h1>
+      <div class="product-grid">
+        
+        <a href="{% url 'television' %}" class="product-card">
+          <div class="card-img">
+            <img src="{% static 'css/img/tv.jpg' %}" alt="Televisions">
+          </div>
+          <div class="card-content">
+            <h4>Televisions</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <a href="{% url 'mixers' %}" class="product-card">
+          <div class="card-img">
+            <img src="{% static 'css/img/mixers.webp' %}" alt="Mixers">
+          </div>
+          <div class="card-content">
+            <h4>Mixers</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <a href="{% url 'phones' %}" class="product-card">
+          <div class="card-img">
+            <img src="{% static 'css/img/phones.avif' %}" alt="Phones and Laptops">
+          </div>
+          <div class="card-content">
+            <h4>Phones and Laptops</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <a href="{% url 'washing' %}" class="product-card">
+          <div class="card-img">
+            <img src="{% static 'css/img/washing.jpg' %}" alt="Washing Machines">
+          </div>
+          <div class="card-content">
+            <h4>Washing Machines</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <a href="{% url 'watch' %}" class="product-card">
+          <div class="card-img">
+            <img src="{% static 'css/img/watches.jpg' %}" alt="Watches">
+          </div>
+          <div class="card-content">
+            <h4>Watches</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <a href="{% url 'air' %}" class="product-card">
+          <div class="card-img">
+            <img src="{% static 'css/img/air.jpg' %}" alt="Air Conditioners">
+          </div>
+          <div class="card-content">
+            <h4>Air Conditioners</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+         <a href="{% url 'speaker' %}" class="product-card">
+          <div class="card-img">
+            <img src="{% static 'css/img/speakers.webp' %}" alt="Speaker">
+          </div>
+          <div class="card-content">
+            <h4>Speakers</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+
+         <a href="{% url 'chimney' %}" class="product-card">
+          <div class="card-img">
+            <img src="{% static 'css/img/chimney.jpg' %}" alt="Chimney">
+          </div>
+          <div class="card-content">
+            <h4>Chimneys</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

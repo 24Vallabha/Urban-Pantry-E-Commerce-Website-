@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Urban Pantry</title>
+  <link rel="stylesheet" href="{% static 'css/about.css' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <h1 class="about-title">About Us</h1>
+     <div class="about-container">
+    <h1 class="about-title">Urban Pantry</h1>
+    <div class="about-content">
+      <p><strong>Urban Pantry</strong> was born out of a simple idea: to make daily essentials more accessible, affordable, and delightful to shop. In today's fast-paced world, people are seeking both convenience and quality — and that’s exactly what we aim to provide.</p>
+
+      <h2>Our Mission</h2>
+      <p>We strive to redefine the online shopping experience by combining modern technology with old-fashioned customer care. Whether it’s your weekly groceries, household appliances, trendy home décor, or pet essentials — we bring it all to your doorstep, with care and speed.</p>
+
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>✅ Wide range of quality products across multiple categories</li>
+        <li>✅ Fast and reliable delivery network</li>
+        <li>✅ Trusted by thousands of happy customers</li>
+        <li>✅ Transparent pricing and easy returns</li>
+      </ul>
+
+      <h2>Our Story</h2>
+      <p>Founded by a group of everyday shoppers who saw the gap in online marketplaces, Urban Pantry started as a small vision in a shared apartment. What began as a dream has now evolved into a full-fledged e-commerce platform with warehousing, logistics, and a dedicated team serving across regions.</p>
+      <p>Our journey hasn’t been easy. But every order placed and every review received has helped us grow and improve. We owe our success to our passionate team and loyal customers who believed in our mission from the very beginning.</p>
+
+      <h2>Quality First</h2>
+      <p>From sourcing to shipping, we prioritize quality. Every product listed on our platform goes through a stringent vetting process. Our curated collections are designed to match modern lifestyles without compromising on durability, taste, or style.</p>
+
+      <h2>Customer Commitment</h2>
+      <p>Your satisfaction is our priority. Our support team is available 24/7 to handle queries, resolve issues, and ensure a seamless shopping experience. We also offer easy returns, secure payments, and constant order tracking to give you peace of mind.</p>
+
+      <h2>Sustainability Matters</h2>
+      <p>We believe in growing responsibly. Urban Pantry is committed to sustainable packaging and reducing our carbon footprint. Many of our vendors are local, eco-friendly producers who share our love for the planet.</p>
+
+      <h2>Looking Ahead</h2>
+      <p>We’re not stopping here. Our vision is to become India’s most loved and trusted online shopping platform. With new features, categories, and partnerships on the horizon, the future is exciting!</p>
+
+      <p>Thank you for making us a part of your journey. With Urban Pantry, shopping is not just easy — it’s enjoyable, reliable, and inspiring.</p>
+
+      <p style="margin-top: 30px;"><em>— The Urban Pantry Team</em></p>
+    </div>
+  </div>
+
+  <section class="top-banner">
+    <h1>🌟 Customer Love for Urban Pantry</h1>
+    <p>Over <strong>10,000+</strong> happy customers. Here's what they say!</p>
+  </section>
+
+  <section class="review-stats">
+    <div class="stat-box">
+      <h2>4.9</h2>
+      <p>Average Rating</p>
+    </div>
+    <div class="progress-box">
+      <label>5 ★</label>
+      <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+      <label>4 ★</label>
+      <div class="bar"><div class="fill" style="width: 15%; background:#f39c12;"></div></div>
+      <label>3 ★</label>
+      <div class="bar"><div class="fill" style="width: 4%; background:#f1c40f;"></div></div>
+      <label>2 ★</label>
+      <div class="bar"><div class="fill" style="width: 1%; background:#e67e22;"></div></div>
+    </div>
+  </section>
+
+  <section class="reviews-grid">
+
+    <div class="review-card">
+      <div class="user">
+        <div class="avatar">A</div>
+        <div>
+          <h3>Aisha Khan</h3>
+          <span>★★★★★</span>
+        </div>
+      </div>
+      <p>“Blown away by how fresh and fast everything is. Urban Pantry is now my go-to grocery store.”</p>
+    </div>
+
+    <div class="review-card">
+      <div class="user">
+        <div class="avatar">M</div>
+        <div>
+          <h3>Manoj Verma</h3>
+          <span>★★★★☆</span>
+        </div>
+      </div>
+      <p>“Customer support is super quick. Even got a refund processed in minutes. Respect!”</p>
+    </div>
+
+    <div class="review-card">
+      <div class="user">
+        <div class="avatar">T</div>
+        <div>
+          <h3>Tanya Rawat</h3>
+          <span>★★★★★</span>
+        </div>
+      </div>
+      <p>“Every order is so smooth. Packaging is clean, items are fresh, and delivery is fast.”</p>
+    </div>
+
+    <div class="review-card">
+      <div class="user">
+        <div class="avatar">R</div>
+        <div>
+          <h3>Rahul Singh</h3>
+          <span>★★★★★</span>
+        </div>
+      </div>
+      <p>“The app and site look premium, and their service actually lives up to it. Superb!”</p>
+    </div>
+
+  </section>
+<div class="cta">
+  <a href="{% url 'write' %}" class="btn">Write Your Review</a>
+</div>
+  </section>
+
+</body>
+</html>
